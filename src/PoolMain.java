@@ -37,7 +37,7 @@ public class PoolMain<T> extends UnicastRemoteObject implements Pool<T> {
 	@Override
 	public synchronized T get() throws RemoteException {
 		// TODO Auto-generated method stub
-		return queue.remove();
+		return queue.poll();
 	}
 
 	@Override
