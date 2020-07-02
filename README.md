@@ -13,3 +13,21 @@ Client(Server-Interface).
 eine Teilaufgabe über das Task-Interface (Code und Parameter) herunter und führen diesen Code lokal
 aus. Die Ergebnisse liefern sie dem Master zurück. Dies geschieht so lange, bis es keine Teilaufgaben mehr
 bei dem Server gibt
+
+---
+
+__Reihenfolge der Ausführung:__
+Server starten --> beliebig viele Worker starten --> Client starten
+
+__Achten: Bitte öffenen mehrere Terminals, um Programme auszuführen !!__
+
+1. javac mwp/Main.java 		--> Gesamtes package kompilieren
+2. java mwp/Main.java Server  		--> Server starten
+3. java mwp/Main.java Worker		--> Ein Worker starten(natürlich können mehrere Worker gestartet werden) 
+4. java mwp/Main.java Client 		--> Ein Client starten
+
+In Server: Wenn 'q' eingegeben wird, wird der Server geschlossen. Wenn 's' eingegeben wird, wird die Anzahl von Servern ausgegeben. 
+
+In Worker: Wenn 'quit' eingegeben wird, wird der Worker geschlossen. 
+
+In Client: Das Ergebnis wird in Client ausgegeben. 
