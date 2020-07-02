@@ -99,16 +99,17 @@ public class MasterServer extends UnicastRemoteObject implements Master, Server{
 		System.out.println("Work distributed!");
 		
 		new Thread(new Runnable() {
-			
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
 				try {
 					while(argPool.size() > 0) {
 						Thread.sleep(1);
+						System.out.println("Waiting till everybody ready");
 					}
 					System.out.println("Server: Merging...");
 					j.merge(resPool);
+					System.out.println("Server: Merged");
 				} catch (InterruptedException | RemoteException e) {
 					// TODO: handle exception
 				}
