@@ -59,7 +59,7 @@ public class JobMath implements Job<Integer, Integer, Integer>{
 		Integer tempInteger = 0;
 		Integer i;
 		try {
-			while((i = resPool.size()) != null) {
+			while((i = resPool.get()) != null) {
 				tempInteger += i;
 			}
 			this.getFuture().setReturnInteger(tempInteger);
