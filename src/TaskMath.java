@@ -20,7 +20,8 @@ public class TaskMath implements Task<Integer, Integer>{
 	@Override
 	public Integer exec(Integer a) {
 		// TODO Auto-generated method stub
-		return (Integer)(a * a);
+		System.out.println("Computing");
+		return (Integer)(a * a * a * a);
 	}
 
 }
