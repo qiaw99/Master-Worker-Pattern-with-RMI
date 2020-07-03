@@ -26,7 +26,7 @@ __Achten: Bitte öffenen mehrere Terminals, um Programme auszuführen !!__
 3. java mwp/Main.java Worker		--> Ein Worker starten(natürlich können mehrere Worker gestartet werden) 
 4. java mwp/Main.java Client 		--> Ein Client starten
 
-In Server: Wenn 'q' eingegeben wird, wird der Server geschlossen. Wenn 's' eingegeben wird, wird die Anzahl von Servern ausgegeben. 
+In Server: Wenn 'q' eingegeben wird, wird der Server geschlossen. Wenn 's' eingegeben wird, wird die Anzahl von Worker ausgegeben. 
 
 In Worker: Wenn 'quit' eingegeben wird, wird der Worker geschlossen. 
 
